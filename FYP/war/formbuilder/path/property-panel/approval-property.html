@@ -1,0 +1,36 @@
+<script>
+
+	$("#deptId").change(function(){
+		alert('sdf');
+		didval = $("deptId").val();
+		if(didval == 'specific'){
+			alert('sdf');
+		}
+	});
+	
+</script>
+<div id="property-container">
+	<div><h3>Properties</h1></div>
+	<table id="property-table">
+	<tr class="property">
+		<td class="property-key" >Department Id</td>
+		<td class="property-value">
+			<select id="deptId">
+				<option value="">All department</option>
+				<option value="">User department</option>
+				<option value="spec">Specific</option>
+			</select>
+		</td>
+	</tr>
+	<tr class="property">
+		<td class="property-key">Super Level</td>
+		<td class="property-value">
+			<select>
+				<option>All level</option>
+				<option>User Supervisor</option>
+				<option>Specific</option>
+			</select>
+		</td>
+	</tr>
+	</table>
+</div>
